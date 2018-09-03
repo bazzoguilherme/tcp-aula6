@@ -8,7 +8,7 @@ public class TestaExpressaoLogica {
 	public static void main(String[] args) {
 		ExpressaoLogica expr = new ExpressaoImplicacao(
 				new ExpressaoImplicacao(
-						new ExpressaoOr(new ExpressaoAtomica("A"), new ExpressaoAtomica("B")),
+						new ExpressaoXor(new ExpressaoAtomica("A"), new ExpressaoAtomica("B")),
 						new ExpressaoAnd(new ExpressaoAtomica("C"), new ExpressaoAtomica("A"))
 				),
 				new ExpressaoOr(
